@@ -1,0 +1,13 @@
+{
+    // Place your settings in this file to overwrite default and user settings.
+    "flow.pathToFlow": "flow",
+    "flow.stopFlowOnExit": true,
+    "flow.enabled": true,
+    "flow.showStatus": true,
+    "flow.runOnEdit": true,
+    "javascript.validate.enable": false,
+    "javascript.format.enable": false,
+    "flow.useNPMPackagedFlow": true,
+    "editor.formatOnSave": true,
+    "eslint.autoFixOnSave": true
+}
