@@ -1,13 +1,5 @@
 import React from 'react'
-import {
-  Image,
-  Platform,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View
-} from 'react-native'
+import { Image, Platform, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { WebBrowser } from 'expo'
 
 import { MonoText } from '../components/StyledText'
@@ -17,7 +9,7 @@ export default class HomeScreen extends React.Component {
     header: null
   }
 
-  render () {
+  render() {
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
@@ -44,7 +36,6 @@ export default class HomeScreen extends React.Component {
             <Text style={styles.getStartedText}>
               Change this text and your app will automatically reload.
             </Text>
-
           </View>
 
           <View style={styles.helpContainer}>
@@ -65,7 +56,7 @@ export default class HomeScreen extends React.Component {
     )
   }
 
-  _maybeRenderDevelopmentModeWarning () {
+  _maybeRenderDevelopmentModeWarning() {
     if (__DEV__) {
       const learnMoreButton = (
         <Text onPress={this._handleLearnMorePress} style={styles.helpLinkText}>
@@ -90,13 +81,13 @@ export default class HomeScreen extends React.Component {
 
   _handleLearnMorePress = () => {
     WebBrowser.openBrowserAsync('https://docs.expo.io/versions/latest/guides/development-mode')
-  };
+  }
 
   _handleHelpPress = () => {
     WebBrowser.openBrowserAsync(
       'https://docs.expo.io/versions/latest/guides/up-and-running.html#can-t-see-your-changes'
     )
-  };
+  }
 }
 
 const styles = StyleSheet.create({

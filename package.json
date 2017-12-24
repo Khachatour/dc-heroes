@@ -4,6 +4,9 @@
   "scripts": {
     "test": "node ./node_modules/jest/bin/jest.js --watch"
   },
+  "eslintConfig": {
+    "extends": "universe/native"
+  },
   "jest": {
     "preset": "jest-expo"
   },
@@ -13,9 +16,11 @@
     "expo": "^23.0.0",
     "react": "16.0.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz",
-    "react-navigation": "^1.0.0-beta.19"
+    "react-navigation": "^1.0.0-beta.19",
+    "styled-components": "^2.4.0"
   },
   "devDependencies": {
+    "eslint-config-universe": "^1.0.6",
     "jest-expo": "^23.0.0"
   },
   "name": "dc-heroes",

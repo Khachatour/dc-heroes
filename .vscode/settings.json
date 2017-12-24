@@ -8,6 +8,7 @@
     "javascript.validate.enable": false,
     "javascript.format.enable": false,
     "flow.useNPMPackagedFlow": true,
+    "eslint.autoFixOnSave": true,
     "editor.formatOnSave": true,
-    "eslint.autoFixOnSave": true
+    "prettier.eslintIntegration": true
 }
